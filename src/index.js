@@ -59,8 +59,8 @@ class USAMap extends React.Component {
   stateMoveHandler = (e) => {
     this.setState({
       toolTipPosition: {
-        x: e.screenX,
-        y: e.screenY,
+        x: e.clientX,
+        y: e.clientY,
       }
     });
   }
